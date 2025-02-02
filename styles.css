@@ -1,0 +1,100 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://source.unsplash.com/1600x900/?technology,futuristic') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Flyer Container */
+.flyer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Flyer Content */
+.flyer-content h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.flyer-content p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+/* Event Details */
+.event-details {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    background: #ff9800;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 250px;
+}
+
+button:hover {
+    background: #e68900;
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .flyer {
+        padding: 20px;
+    }
+    
+    .flyer-content h1 {
+        font-size: 22px;
+    }
+    
+    .flyer-content p {
+        font-size: 14px;
+    }
+    
+    button {
+        font-size: 16px;
+        padding: 10px 15px;
+   }
+}
